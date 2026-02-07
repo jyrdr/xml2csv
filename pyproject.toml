@@ -1,0 +1,8 @@
+[project]
+name = "xml2csv"
+version = "0.1.0"
+requires-python = ">=3.8"
+description = "Convert XML to CSV"
+
+[project.scripts]
+xml2csv = "xml2csv.xml2csv:main"
