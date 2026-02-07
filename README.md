@@ -1,11 +1,17 @@
 # xml2csv
 
-A simple Python CLI tool that converts XML to CSV. No external dependencies — uses only Python 3 stdlib.
+A simple Python CLI tool that converts XML to CSV born from lightweight utility need. No external dependencies, uses only Python 3 stdlib.
+
+## Installation
+
+```bash
+pip install -e .
+```
 
 ## Usage
 
 ```bash
-python3 xml2csv/xml2csv.py <input.xml> <output.csv> --row TAG [--columns TAG ...] [-r]
+xml2csv <input.xml> <output.csv> --row TAG [--columns TAG ...] [-r]
 ```
 
 ### Arguments
@@ -49,8 +55,8 @@ Given this XML:
 
 ```bash
 # All children as columns
-python3 xml2csv/xml2csv.py library.xml books.csv --row book
+xml2csv library.xml books.csv --row book
 
 # Only title and author columns
-python3 xml2csv/xml2csv.py library.xml books.csv --row book --columns title author
+xml2csv library.xml books.csv --row book --columns title author
 ```
